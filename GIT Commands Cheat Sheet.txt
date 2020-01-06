@@ -5,6 +5,6 @@ git add .
 # Committing changes to GIT
 git commit -m "COMMENT"
 # Pushing to GITHUB master branch
-push -u origin master
+git push -u origin master
 #Checking current GIT status
 git status
