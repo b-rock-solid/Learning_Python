@@ -1,0 +1,10 @@
+# Add github site as the remote origin for GIT for the project
+git remote add origin git@github.com:b-rock-solid/Learning_Python.git
+# Add all files to the GIT 
+git add .
+# Committing changes to GIT
+git commit -m "COMMENT"
+# Pushing to GITHUB master branch
+push -u origin master
+#Checking current GIT status
+git status
