@@ -19,3 +19,5 @@ Chapter 2
 	simple_messages.py
 	whitespace_strip.py
 	zen_of_python.py
+Chapter 3
+    bicycles.py
