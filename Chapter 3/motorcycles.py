@@ -69,3 +69,25 @@ print(f"The last motorcycle I owned was a {last_owned.title()}.")
 motorcycles = ['honda', 'yamaha', 'suzuki']
 first_owned = motorcycles.pop(0)
 print(f"The first motorcycle I owned was a {first_owned.title()}")
+
+# Removing an Item by Value using the remove() method
+# This is used if you only know the value you want to remove and not the position
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print("Removing an item using the remove() method:")
+print(motorcycles)
+# Remove the value 'ducati' using remove() method
+motorcycles.remove('ducati')
+print(motorcycles)
+
+# You can use the remove() method to work with a value that's being removed from a list
+print("Using remove() method with a value that's being removed:")
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+# Assigning 'ducati' as the variable 'too_expensive'
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+# NOTE: The remove() method deletes only the first occurence of the value specified. If there's a possibility
+#       the value appears more than once in the list, a loop will need to be used to remove all occurrences
+# Loops Reference: Chapter 7
