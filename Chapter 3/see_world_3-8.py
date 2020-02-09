@@ -1,0 +1,21 @@
+# Try It Yourself Exercise - Pg.46
+# 3-8 Seeing the World
+countries = ['japan', 'canada', 'russia', 'germany', 'england']
+print(countries)
+print(f"\nList using sorted():\n{sorted(countries)}")
+print("Original list:")
+print(countries)
+print("\nList using sorted() reverse:")
+print(sorted(countries, reverse=True))
+print("Original List:")
+print(countries)
+print("\nList using reverse():")
+countries.reverse()
+print(countries)
+print("List reversed back:")
+countries.reverse()
+print(countries)
+countries.sort()
+print(f"\nCountries sorted using sort():\n{countries}")
+countries.sort(reverse=True)
+print(f"\nCountries reverse sorted using sort():\n{countries}")
