@@ -11,6 +11,6 @@ Chapter 1
 Chapter 2
 	Introduction to Syntax, Variables, Intergers, f-strings and stripping white space
 Chapter 3
-    Introduction to lists, using lists with indexes, updating,sorting and getting the length of lists
+    	Introduction to lists, using lists with indexes, updating,sorting and getting the length of lists
 Chapter 4
 	Working with lists using a loop
