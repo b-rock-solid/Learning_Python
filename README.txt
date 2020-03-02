@@ -22,3 +22,5 @@ Chapter 4
 	Working with Part of a List
 		Work with specific group of items in a list called a "slice", copy a list using a "slice"
 			players.py, foods.py, slices_4-10.py, my_ps_your_ps_4-11.py, more_loops_4-12.py
+		Creating a tuple
+			dimensions.py, buffet_4-13.py
