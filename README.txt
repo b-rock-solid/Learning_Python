@@ -17,8 +17,8 @@ Chapter 4
 		Basics of looping:
 			magicians.py, pizzas_4-1.py, animals_4-2.py
 		Numerical lists and the range() function:
-			first_numbers.py, even_numbers.py, squares.py, counting_twenty_4-3.py, one_million_4-4.py, summing_million_4-5.py, odd_numbers_4-6.py
-			threes_4-7.py, cubes_4-8.py, cube_comprehension_4-9.py
+			first_numbers.py, even_numbers.py, squares.py, counting_twenty_4-3.py, one_million_4-4.py, summing_million_4-5.py, 
+			odd_numbers_4-6.py, threes_4-7.py, cubes_4-8.py, cube_comprehension_4-9.py
 	Working with Part of a List
 		Work with specific group of items in a list called a "slice", copy a list using a "slice"
 			players.py, foods.py, slices_4-10.py, my_ps_your_ps_4-11.py, more_loops_4-12.py
