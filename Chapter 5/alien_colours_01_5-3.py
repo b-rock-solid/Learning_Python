@@ -6,7 +6,14 @@
 # If false, there will be no output
 ########################################################################################################################
 
+# Version that outputs message
 alien_colour = 'green'
+
+if alien_colour == 'green':
+    print("5 Points earned! Keep it up!")
+
+# Version that outputs no message
+alien_colour = 'red'
 
 if alien_colour == 'green':
     print("5 Points earned! Keep it up!")
