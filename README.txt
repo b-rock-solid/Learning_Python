@@ -3,7 +3,7 @@ Source/Learning Material: Python Crash Course 2nd Edition
 Author: Eric Matthes
 
 All of my python files and cheat sheets I create will be added to this REPO.
-I will try to comment code as I go to keep notes as to what each line do. 
+I will try to comment code as I go to keep notes as to what each line does. 
 
 Index of Files relating to chapters/areas of the Source material:
 Chapter 1
@@ -24,3 +24,5 @@ Chapter 4
 			players.py, foods.py, slices_4-10.py, my_ps_your_ps_4-11.py, more_loops_4-12.py
 		Creating a tuple
 			dimensions.py, buffet_4-13.py
+Chapter 5
+	Conditional tests
