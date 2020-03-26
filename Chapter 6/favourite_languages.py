@@ -46,3 +46,29 @@ print("\nUsing keys() method to check if a person wasn't polled:")
 
 if 'erin' not in favourite_languages.keys():
     print("Erin, please take our poll!")
+
+
+# Looping Through a Dictionary's Keys in a Particular Order
+# By default, looping through a dictionary, returns the items in the order they were inserted
+# One way to change the order is to use the sorted() method
+print("\nUsing sorted() method to loop the keys in a different order:")
+
+for name in sorted(favourite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+
+# Looping Through All Values in a Dictionary
+# Sometimes, you'll only be interested in the values that a dictionary contains
+# You can use the values() method to return a list of values withough any keys
+print("\nUsing the values() method to return only values:")
+
+print("The following languages have been mentioned:")
+for language in favourite_languages.values():
+    print(language.title())
+
+# Using the values() method returns all values, however doesn't take into consideration duplicates
+# Use the set() method. This is a collection in which each item must be unique
+print("\nUsing set() to create a unique collection:")
+
+print("The following languages have been mentioned:")
+for language in set(favourite_languages.values()):
+    print(language.title())
