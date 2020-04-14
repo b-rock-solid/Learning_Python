@@ -72,3 +72,23 @@ print("\nUsing set() to create a unique collection:")
 print("The following languages have been mentioned:")
 for language in set(favourite_languages.values()):
     print(language.title())
+
+
+# Using Lists In A Dictionary
+
+favourite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favourite_languages.items():
+    if len(languages) > 1:
+        print(f"\n{name.title()}'s favourite languages are:")
+        for language in languages:
+            print(f"\t{language.title()}")
+    elif len(languages) == 1:
+        print(f"\n{name.title()}'s favourite language is:")
+        for language in languages:
+            print(f"\t{language.title()}")
