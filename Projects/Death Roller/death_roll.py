@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 """Simulates the death roll gamble from WoW."""
 
@@ -28,17 +29,25 @@ class Deathroll:
         player_rolling = 'player01'
         while self.nrange != 1:
             if player_rolling == 'player01':
+                print(f"\n{player01.player_name.title()} is now rolling:")
+                sleep(2)
                 roll_range = self.nrange
                 roll_result = randint(1, roll_range)
                 print(f"{player01.player_name.title()} has rolled: {roll_result}")
                 self.nrange = roll_result
                 player_rolling = 'player02'
             elif player_rolling == 'player02':
+                print(f"\n{player02.player_name.title()} is now rolling:")
+                sleep(2)
                 roll_range = self.nrange
                 roll_result = randint(1, roll_range)
                 print(f"{player02.player_name.title()} has rolled: {roll_result}")
                 self.nrange = roll_result
                 player_rolling = 'player01'
+        if player_rolling == 'player01':
+            print(f"\nCongratulations {player01.player_name.title()} you win ${wager}")
+        elif player_rolling == 'player02':
+            print(f"\nCongratulations {player02.player_name.title()} you win ${wager}")
 
 
 # Create players
@@ -49,31 +58,36 @@ player02 = Player(input("Enter player 2's name: "))
 player01.welcome_player()
 player02.welcome_player()
 
+
+active = True
+while active:
 # Prompt for the wager:
-while True:
-    try:
-        wager = int(input('How much do you wager? '))
-        if wager <= 0:
-            raise(ValueError)
-        confirmation = input(f"Are you sure you wish to wager ${wager}? yes/no/cancel ")
-        if confirmation == 'cancel':
-            break
-        elif confirmation == 'no':
-            print("Please choose an amount to wager wisely.")
-        elif confirmation == 'yes':
-            print(f"Good Luck!\nYou're wager is ${wager}.")
-            break
-    except ValueError:
-        print("Please enter a value above 0")
+    while True:
+        try:
+            wager = int(input('How much do you wager? '))
+            if wager <= 0:
+                raise(ValueError)
+            confirmation = input(f"Are you sure you wish to wager ${wager}(yes/no/cancel)? ")
+            if confirmation == 'cancel' or confirmation == 'c':
+                exit(10)
+            elif confirmation == 'no' or confirmation == 'n':
+                print("Please choose an amount to wager wisely.")
+            elif confirmation == 'yes' or confirmation == 'y':
+                print(f"Good Luck!\nYou're wager is ${wager}.")
+                break
+        except ValueError:
+            print("Please enter a value above 0")
 
-roll_start_count = wager * 10
-game_start = Deathroll(roll_start_count)
+# Gather the starting roll max number
+    roll_start_count = wager * 10
 
-game_start.roll()
+# Begin game
+    game_start = Deathroll(roll_start_count)
+    game_start.roll()
 
-
-
-
-#print(roll_start_count)
-# print(type(wager))
-# print(wager)
+    play_again = input("\nDo you wish to play again(y/n)? ")
+    if play_again == "n":
+        print("\nThanks for playing Death Roll! =)")
+        active = False
+    elif play_again == "y":
+        print("\nLets do it!")
