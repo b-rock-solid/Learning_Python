@@ -14,5 +14,7 @@ winning_ticket = []
 while len(winning_ticket) < 4:
     pulled_ticket = choice(lottery_numbers)
     if pulled_ticket not in winning_ticket:
-        print(f"Ticket {pulled_ticket} has been pulled. Congratulations!")
+        print(f"Ticket {pulled_ticket} has been pulled.")
         winning_ticket.append(pulled_ticket)
+
+print(f"The winning lottery ticket is: {winning_ticket}")
